@@ -329,24 +329,24 @@ def main(vmanage_host, vmanage_port, username, password):
     get_dr_status(vmanage_host, vmanage_port, headers)
 
     # Get and print cluster_management_list status
-    print("\nDisaster Recovery Status:")
+    print("\nCluster Management list - DC:")
     get_cluster_management_list(vmanage_host, vmanage_port, headers)
 
 
     # Get and print dr_cluster_management_list status
-    print("\nDisaster Recovery Status:")
+    print("\nCluster Management list - DR:")
     get_cluster_management_list(dr_vmanage_host, vmanage_port, dr_headers)
 
     # Get and print cluster_reachability_list status
-    print("\nDisaster Recovery Status:")
+    print("\nServices_Rechability - DC")
     get_reachability_list(vmanage_host, vmanage_port, headers)
 
     # Get and print dr_cluster_reachability_list status
-    print("\nDisaster Recovery Status:")
+    print("\nServices_Rechability - DR")
     get_reachability_list(dr_vmanage_host, vmanage_port, dr_headers)
     
     # Get and print serial_list status
-    print("\nDisaster Recovery Status:")
+    print("\nSerial List Check:")
     get_serial_list(vmanage_host, vmanage_port, headers)
     
     # Post - Send to Controller
